@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyril Onyeachonam - 60 Years of Excellence</title>
+    <link rel="stylesheet" href="birth.css" id="birth-css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+  </head>
+  <body>
+    <div id="cake-loader">
+      <div class="wrapper">
+        <div class="greeting">Happy Birthday Dad</div>
+        <div class="plate">
+          <div class="cake-wrap">
+            <div class="cake-topping">
+              <div class="topping-top">
+                <div class="candle-container">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="candle-wrap">
+                    <div class="flame-wrap"></div>
+                    <div class="candle-base">
+                      <div class="candle-top"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="topping-front">
+                <div class="top-layer"></div>
+                <div class="bottom-layer"></div>
+              </div>
+            </div>
+            <div class="cake-base">
+              <div class="base-front"></div>
+              <div class="base-top"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg class="svg">
+        <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0,0 V0.481 s0.021,0.37,0.078,0.404 s0.035,-0.296,0.102,-0.27 s0.007,0.363,0.096,0.354 s0.028,-0.466,0.1,-0.487 S0.406,0.999,0.457,0.999 s0.03,-0.502,0.075,-0.518 s0.041,0.488,0.081,0.274 c0.007,-0.038,0.021,-0.187,0.044,-0.215 c0.014,-0.017,0.038,0.401,0.075,0.392 s0.023,-0.28,0.074,-0.392 c0.022,-0.04,0.072,0.359,0.1,0.344 c0.057,-0.029,0.094,-0.405,0.094,-0.405 V-0.001"
+          ></path>
+        </clipPath>
+        <clipPath id="my-flame-path" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0.501,0 s0.188,0.101,0.295,0.238 s0.123,0.15,0.169,0.286 S1,0.74,0.928,0.838 S0.711,1,0.501,1 S0.216,0.937,0.09,0.838 s-0.083,-0.149,0,-0.29 s0.23,-0.139,0.333,-0.276 S0.501,0,0.501,0"
+          ></path>
+        </clipPath>
+        <clipPath id="my-star-path" clipPathUnits="objectBoundingBox">
+          <path
+            d="M0.5,0.846 l-0.309,0.154,0.044,-0.357 L0,0.382 l0.336,-0.067 L0.5,0 l0.164,0.315,0.336,0.067,-0.235,0.261,0.044,0.357"
+          ></path>
+        </clipPath>
+      </svg>
+    </div>
+    <div id="main-content" style="display: none">
+      <!-- Global Floating Bubbles -->
+      <div class="global-bubbles" id="globalBubbles"></div>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">Cyril @ 60</div>
+          <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#timeline" class="nav-link">Journey</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#thank-you" class="nav-link">Thank You</a></li>
+          </ul>
+          <div class="nav-controls">
+            <button id="music-toggle" class="music-btn" title="Toggle Music">
+              <span class="music-icon">🎵</span>
+            </button>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Background Music -->
+      <audio id="birthday-music" loop>
+        <source
+          src="38-Michael-Riepen-Happy-Birthday(chosic.com).mp3"
+          type="audio/wav"
+        />
+        <!-- Fallback to a simple beep sound if Happy Birthday song is not available -->
+      </audio>
+
+      <!-- Hero Section -->
+      <section id="hero" class="hero" data-navcolor="#353f9e">
+        <div class="hero-background">
+          <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+          </div>
+        </div>
+        <div class="hero-container">
+          <div class="hero-content-left">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                <span class="title-line">Celebrating</span>
+                <span class="title-line highlight">Cyril Onyeachonam</span>
+              </h1>
+              <div class="typed-text-container">
+                <span class="typed-prefix">A </span>
+                <span class="typed-text" id="typed-text"></span>
+              </div>
+              <p class="hero-subtitle">
+                60 years of dedication, leadership, and hospitality excellence
+                at Sheraton Hotels
+              </p>
+              <div class="hero-stats">
+                <div class="stat">
+                  <span class="stat-number">60</span>
+                  <span class="stat-label">Years of Life</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">30+</span>
+                  <span class="stat-label">Years at Sheraton</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">∞</span>
+                  <span class="stat-label">Lives Touched</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-content-right">
+            <div class="hero-image-container">
+              <div class="hero-image">
+                <img
+                  src="cy-blue.jpg"
+                  alt="Cyril Onyeachonam"
+                  class="profile-img"
+                />
+                <div class="image-glow"></div>
+              </div>
+              <div class="floating-elements">
+                <div class="floating-icon icon-1">🏨</div>
+                <div class="floating-icon icon-2">👨‍👩‍👧‍👦</div>
+                <div class="floating-icon icon-3">🌟</div>
+                <div class="floating-icon icon-4">🎉</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="scroll-arrow"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about" data-navcolor="#86a2f3">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">The Man Behind the Legacy</h2>
+            <p class="section-subtitle">
+              A journey of passion, dedication, and excellence
+            </p>
+          </div>
+          <div class="about-content">
+            <div class="about-card">
+              <div class="card-icon">🏨</div>
+              <h3>Hospitality Excellence</h3>
+              <p>
+                Dedicated decades to creating exceptional guest experiences at
+                Sheraton Hotels, setting standards for service excellence.
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="card-icon">👨‍👩‍👧‍👦</div>
+              <h3>Family Leader</h3>
+              <p>
+                A loving father and mentor who has guided his family with
+                wisdom, strength, and unwavering support.
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="card-icon">🌟</div>
+              <h3>Community Impact</h3>
+              <p>
+                Touched countless lives through his work, mentorship, and
+                commitment to making a positive difference.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline Section -->
+      <section id="timeline" class="timeline-section" data-navcolor="#86a2f3">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Life's Journey</h2>
+            <p class="section-subtitle">
+              Milestones that shaped a remarkable life
+            </p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">1965</div>
+              <div class="timeline-content">
+                <h3>The Beginning</h3>
+                <p>Born with a spirit destined for greatness</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">1985</div>
+              <div class="timeline-content">
+                <h3>Career Start</h3>
+                <p>Began his journey in the hospitality industry</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">1990</div>
+              <div class="timeline-content">
+                <h3>Sheraton Hotels</h3>
+                <p>Making advancements with promotions to show for it</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">1996</div>
+              <div class="timeline-content">
+                <h3>Born Again</h3>
+                <p>Gave his life to Christ, Baptised with Water</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">1998</div>
+              <div class="timeline-content">
+                <h3>Wedding</h3>
+                <p>Got Married to sweetheart Josephine Nwaokwu</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">1999</div>
+              <div class="timeline-content">
+                <h3>First Born</h3>
+                <p>Gave birth to the first of many, Amaka</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2000</div>
+              <div class="timeline-content">
+                <h3>Leadership Roles</h3>
+                <p>
+                  Making Contributios in all aspects of life, advancing God's
+                  plan for the nation
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2001</div>
+              <div class="timeline-content">
+                <h3>Service Merit Award</h3>
+                <p>
+                  Acted as Treasurer to the Sheraton Lagos Hotel Cooperative
+                  Multipurpose Society Limited
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2002</div>
+              <div class="timeline-content">
+                <h3>Another One</h3>
+                <p>Welcomed his second son, Ebuke</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2006</div>
+              <div class="timeline-content">
+                <h3>Saved the Best for Last</h3>
+                <p>
+                  Welcomed the best for the last, His Last Born, Buchi
+                  Onyeachonam aka cy junior
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2011</div>
+              <div class="timeline-content">
+                <h3>Industry Recognition</h3>
+                <p>
+                  Recognition of
+                  <span style="color: chocolate">Twenty-Years </span> of service
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2017</div>
+              <div class="timeline-content">
+                <h3>Service Award</h3>
+                <p>
+                  Recognition of
+                  <span style="color: goldenrod">Twenty-Five</span> years of
+                  dedicated and conscientious service
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2020</div>
+              <div class="timeline-content">
+                <h3>ICOC Nigeria</h3>
+                <p>
+                  Still Making Active participations to serve God as part of the
+                  choir, head of accounting and overall sharing the Good news of
+                  the Lord
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h3>Sacrifice</h3>
+                <p>Sent His Daughter oversees to study her masters program</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2025</div>
+              <div class="timeline-content">
+                <h3>Diamond Jubilee</h3>
+                <p>Celebrating 60 years of an extraordinary life</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery" data-navcolor="#86a2f3">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">A Life in Pictures</h2>
+            <p class="section-subtitle">
+              Cherished moments, celebrated milestones, and the journey of a
+              lifetime.
+            </p>
+          </div>
+          <div class="photo-grid">
+            <div class="photo-item large">
+              <img src="father-in-purple.jpg" alt="Cyril's career highlights" />
+              <div class="photo-overlay">
+                <div class="photo-caption">Career Highlights at Sheraton</div>
+              </div>
+            </div>
+            <div class="photo-item square">
+              <img src="father-in-green.jpg" alt="Family moments" />
+              <div class="photo-overlay">
+                <div class="photo-caption">Family Celebrations</div>
+              </div>
+            </div>
+            <div class="photo-item square">
+              <img src="sat.jpg" alt="Professional achievements" />
+              <div class="photo-overlay">
+                <div class="photo-caption">Professional Achievements</div>
+              </div>
+            </div>
+            <div class="photo-item tall">
+              <img src="father-in-green-sitting.jpg" alt="Leadership moments" />
+              <div class="photo-overlay">
+                <div class="photo-caption">Leadership Excellence</div>
+              </div>
+            </div>
+            <div class="photo-item square">
+              <img src="father-in-white-standing.jpg" alt="Team building" />
+              <div class="photo-overlay">
+                <div class="photo-caption">Team Building</div>
+              </div>
+            </div>
+            <div class="photo-item square">
+              <img src="the-man.jpg" alt="Awards ceremony" />
+              <div class="photo-overlay">
+                <div class="photo-caption">Awards & Recognition</div>
+              </div>
+            </div>
+            <div class="photo-item large">
+              <img src="fam.jpg" alt="Milestone celebrations" />
+              <div class="photo-overlay">
+                <div class="photo-caption">Milestone Celebrations</div>
+              </div>
+            </div>
+            <div class="photo-item square">
+              <img src="father-in-white.jpg" alt="Mentoring colleagues" />
+              <div class="photo-overlay">
+                <div class="photo-caption">Mentoring Excellence</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials" data-navcolor="#86a2f3">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Words of Honor</h2>
+            <p class="section-subtitle">What people say about Cyril</p>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "A very Happy Birthday to you father, I thank God each day for
+                  the blessings He given me through you, you are the greatest
+                  man I have ever known and an inspiration to all of us. I love
+                  you and I appreciate everything you have done for me, "
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Buchi Onyeachonam</h4>
+                  <span>General overseer </span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Thank you for all the amazing things you’ve done and continually do for me and the rest of our family! Thank you for your constant guidance, your words of advice, your provisions and your personal involvement in our individual lives. You’re a living inspiration to me and so many other people.
+"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Ebuke</h4>
+                  <span>Son</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  &nbsp;&nbsp;&nbsp;Happy birthday to my endless love welcome to
+                  the 6th floor. May the Lord continue to shine his face on you
+                  even as you keep showcasing his splendour in the
+                  land of the living
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Josephine Onyeachonam</h4>
+                  <span>Wife</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  &nbsp;&nbsp;&nbsp;Happy Birthday to the best Uncle in the
+                  world, Live life stay strong, 60 years isnt a joke, strive on
+                  and may God grant your hearts desires
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Kenneth Ambrose</h4>
+                  <span>Nephew</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  &nbsp;&nbsp;&nbsp;"Uncle CY! The lady with the long legs is
+                  wishing you a very happy birthday. 60 years no be beans o! I
+                  Thank God for how far He has brought you. May God continue to
+                  bless and keep you in Jesus name. Have the best time Uncle!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Karen Ambrose</h4>
+                  <span>Niece</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Ogbuefi, congratulations on your arrival at the 6th floor. Glory be to God for your life and may His mercies continue with you. I celebrate you today and pray for long life and good health. Happy birthday to you 🎂 🍷
+"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Mr Ambrose</h4>
+                  <span>Friend</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Happy birthday to an amazing father and brother. May your light never dim. Enjoy God's blessings. Happy Birthday"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Tessy Oyedoku</h4>
+                  <span>Friend</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Happiest birthday to my super man and brother. The great pillar of Onyeachonam's dynasty. The path finder. God bless you richly brother CY. Congratulations"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Anwuli</h4>
+                  <span>Sister</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Happy 60th birthday bro, wishing you a grand celeberation, filled with joy, love and unforgettable memories. May this milestone mark the new beginnings to long life, prosperity and happiness. Congratulations"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Tobs</h4>
+                  <span>Friend</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Wishing Coachito a happy and fulfilling celeberation of your diamond jubilee. May your feet be steady and strong as you climbed this 6th floor. May you not gain one blessing at the expense of any loss of the good things the Lord has done for you over the years. My family and i celeberate your good person"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Evangekist & Mrs Obasa</h4>
+                  <span>Co-worker and friend</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Boy, Congratulations on your 60th birthday! May this milestone year be filled with joy,laughter, sound health and new adventures. I wish you many happy returns. Enjoy"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Sheddy</h4>
+                  <span>Friend</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Happy birthday uncle CY. In the time I’ve known you, you’ve been so supportive, kind and welcoming. You’re a great dad and it’s no surprise to see how loved you are by everyone here and all who are privileged to know you.
+
+Wishing you a blessed birthday and a wonderful year ahead. May the Lord uphold you and strengthen you in your new age. Happy birthday!! 🎉🎊
+"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Walter Akpadeye</h4>
+                  <span>Family Friend</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Congratulations my dear brother on your diamond Jubilee celeberation. May the Lord grant you life in good health to celebrate more landmarks in good health and greater contentment. May the 6th floor be more fulfilling for your hearts desires. "
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Mrs Shilon</h4>
+                  <span>Friend</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Enjoy your day bro, While Wishing you the best of time today, you will live to celeberate many more beautifuk years ahead in good health. Congratulations"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Mr Fabuluje</h4>
+                  <span>Friend</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Happy Birthday Onyeoma CY, May the good Lord continue to shower you his blessings as He prosper you with more good health IJNA"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4>Mr Amadi</h4>
+                  <span>Friend</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Submission Form -->
+     
+
+      <!-- Thank You Section -->
+      <section id="thank-you" class="thank-you" data-navcolor="#a9c4f8">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Thank You, Dad</h2>
+            <p class="section-subtitle">
+              For everything you've done, everything you are, and everything you
+              continue to be
+            </p>
+          </div>
+          <div class="thank-you-grid">
+            <div class="thank-you-card">
+              <div class="card-icon">💝</div>
+              <h3>Unconditional Love</h3>
+              <p>
+                Thank you for loving us without conditions, for being our safe
+                haven, and for showing us what true love means every single day.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">🎓</div>
+              <h3>Education & Opportunities</h3>
+              <p>
+                For sacrificing so much to give us the best education possible,
+                for believing in our dreams, and for making sure we had every
+                opportunity to succeed.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">🙏</div>
+              <h3>Spiritual Guidance</h3>
+              <p>
+                For leading us in faith, teaching us to trust in God, and
+                showing us how to live a life of purpose and meaning through
+                your example.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">💪</div>
+              <h3>Strength & Resilience</h3>
+              <p>
+                For showing us how to face challenges with courage, for never
+                giving up, and for teaching us that we can overcome anything
+                with determination.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">🏠</div>
+              <h3>Home & Security</h3>
+              <p>
+                For providing us with a loving home, for making us feel safe and
+                protected, and for creating a foundation of stability in our
+                lives.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">🎯</div>
+              <h3>Values & Principles</h3>
+              <p>
+                For instilling in us the importance of honesty, hard work,
+                respect, and integrity. Your values are our compass in life.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">🤝</div>
+              <h3>Support & Encouragement</h3>
+              <p>
+                For always being our biggest cheerleader, for believing in us
+                even when we didn't believe in ourselves, and for pushing us to
+                be our best.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">🌟</div>
+              <h3>Role Model</h3>
+              <p>
+                For being the perfect example of what a father, husband, and man
+                should be. You've set the bar so high, and we're proud to call
+                you our dad.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">💼</div>
+              <h3>Work Ethic</h3>
+              <p>
+                For showing us the value of dedication, professionalism, and
+                excellence in everything we do. Your 30+ years at Sheraton
+                inspire us daily.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">🎉</div>
+              <h3>Joy & Laughter</h3>
+              <p>
+                For filling our home with laughter, for teaching us to find joy
+                in the little things, and for making every day feel like a
+                celebration.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">🛡️</div>
+              <h3>Protection & Care</h3>
+              <p>
+                For always watching over us, for protecting us from harm, and
+                for being our guardian angel throughout our lives.
+              </p>
+            </div>
+
+            <div class="thank-you-card">
+              <div class="card-icon">❤️</div>
+              <h3>Endless Love</h3>
+              <p>
+                For loving us more than words can express, for being our rock,
+                our hero, and our everything. We love you beyond measure.
+              </p>
+            </div>
+          </div>
+
+          <div class="thank-you-message">
+            <div class="message-content">
+              <h3>From the Bottom of Our Hearts</h3>
+              <p>
+                Dad, as you celebrate 60 amazing years, we want you to know that
+                every sacrifice you've made, every lesson you've taught, and
+                every moment you've shared with us has shaped us into the people
+                we are today. You are our hero, our inspiration, and our
+                greatest blessing. Thank you for being the most incredible
+                father anyone could ask for.
+              </p>
+              <div class="family-signature">
+                <span>With All Our Love,</span>
+                <h4>The Onyeachonam Family</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <h3>Celebrating 60 Years of Excellence</h3>
+            <p>Cyril Onyeachonam - A life well-lived, a legacy well-earned</p>
+            <p>
+              We Love you and appreciate
+              <span style="color: gold">EVERYTHING YOU</span> do for us
+            </p>
+
+            <div class="footer-year">2025</div>
+            <p>
+              This site was built by
+              <a class="Kenneth" href="https://buchi-portfolio-weld.vercel.app/"
+                >Buchi Onyeachonam</a
+              >
+              in appreciation of Mr Cyril Onyeachonam
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="birth.js" id="birth-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="script.js"></script>
+    <script>
+      setTimeout(function () {
+        document.getElementById("cake-loader").style.opacity = 0;
+        setTimeout(function () {
+          document.getElementById("cake-loader").style.display = "none";
+          document.getElementById("main-content").style.display = "";
+          document.getElementById("birth-css")?.remove();
+          document.getElementById("birth-js")?.remove();
+        }, 700);
+      }, 5000);
+    </script>
+  </body>
+</html>
